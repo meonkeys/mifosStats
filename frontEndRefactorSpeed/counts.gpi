@@ -2,7 +2,7 @@ set terminal png small
 set xdata time
 set format x "%b/%y"
 set timefmt "%Y-%m-%d"
-set title "Change in LOC for old, new front-end code"
+set title "Lines of code vs. Date for old and new front-end"
 set ylabel "Lines of Code"
 set xlabel "Month/Year"
 set output "counts.png"
