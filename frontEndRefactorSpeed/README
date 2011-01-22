@@ -1,0 +1,23 @@
+NAME
+
+    counts - Mifos front-end lines-of-code report
+
+SYNOPSIS
+
+    make
+
+DESCRIPTION
+
+    Generates a report of historical Struts/JSP, SpringMVC/FTL lines of code.
+
+    WARNING: destroys any local modifications not committed to git!
+
+    To generate the report, type "make". The path to your Mifos "head" clone
+    will probably need to be manually changed in counts.sh.
+
+    Prerequisites include: bash, make, gnuplot, and python.
+
+NOTES
+
+    Before June 2005, only a few Freemarker pages were used (for acceptance
+    tests).
