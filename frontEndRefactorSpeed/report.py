@@ -26,10 +26,14 @@ for rawline in f:
         last[measure] = thisMeasure
 f.close()
 
-print '<p><img src="counts.png"/></p>'
+print '<p><img src="counts.png"/></p>\n'
+print '<hr/>\n'
 
 for measure in measures:
     prettyDate = time.strftime(\
             '%b %Y', time.strptime(steepest[measure]['date'], '%Y-%m-%d'))
-    print '<p>Most dramatic change in %s: <strong>%d</strong> (time period ending %s)</p>' %\
+    print '<p>Most dramatic change in %s: <strong>%d</strong> (time period ending %s)</p>\n' %\
         (measure, steepest[measure]['size'], prettyDate)
+
+print '<hr/>\n'
+print '<p style="font-size: xx-small;"><a href="https://github.com/meonkeys/mifosStats/tree/master/frontEndRefactorSpeed">code used to generate these stats</a></p>\n'
