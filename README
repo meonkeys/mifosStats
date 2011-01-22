@@ -1,0 +1,5 @@
+Mifos code statistics tools.
+
+The initial purpose of this code is to measure the speed of the
+Mifos front-end refactor. See
+http://mifosforge.jira.com/wiki/display/MIFOS/Spring+FTL+Conversion+Spike#SpringFTLConversionSpike-Measuringourspeedimprovements
