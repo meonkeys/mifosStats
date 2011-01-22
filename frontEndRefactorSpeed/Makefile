@@ -1,4 +1,4 @@
-report.html: report.py counts.dat
+report.html: report.py counts.png counts.dat
 	python $< > $@
 
 counts.png: counts.gpi counts.dat
