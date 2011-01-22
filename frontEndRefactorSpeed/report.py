@@ -1,5 +1,6 @@
 import copy
 import math
+import os
 import time
 
 measures = ['Struts/jsp LOC', 'SpringMVC/ftl LOC']
@@ -37,3 +38,5 @@ for measure in measures:
 
 print '<hr/>\n'
 print '<p style="font-size: xx-small;"><a href="https://github.com/meonkeys/mifosStats/tree/master/frontEndRefactorSpeed">code used to generate these stats</a></p>\n'
+commitHash = os.popen('git rev-parse HEAD').read().rstrip()
+print '<!-- built from commit %s at UNIX time %s -->' % (commitHash, time.time())
