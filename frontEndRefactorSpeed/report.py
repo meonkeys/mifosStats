@@ -36,6 +36,19 @@ for measure in measures:
     print '<p>Most dramatic change in %s: <strong>%d</strong> (time period ending %s)</p>\n' %\
         (measure, steepest[measure]['size'], prettyDate)
 
+print '''<p>Assumptions:
+<ul>
+<li>these data are not useful for estimating speed of future refactoring work</li>
+<li>all acceptance tests pass in refactored areas</li>
+<li>look &amp; feel of refactored areas is acceptable</li>
+</ul>
+</p>
+
+<p>Also see this <a
+href="http://thread.gmane.org/gmane.comp.finance.mifos.devel/10798">this thread
+on the dev list</a> about the usefulness of these measurements.</p>
+'''
+
 print '<hr/>\n'
 print '<p style="font-size: xx-small;"><a href="https://github.com/meonkeys/mifosStats/tree/master/frontEndRefactorSpeed">code used to generate these stats</a></p>\n'
 commitHash = os.popen('git rev-parse HEAD').read().rstrip()

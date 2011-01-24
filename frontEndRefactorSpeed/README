@@ -21,3 +21,13 @@ NOTES
 
     Before June 2005, only a few Freemarker pages were used (for acceptance
     tests).
+
+TODO
+
+    * Add discrete "completion points" to the graph (ie: when a particular area
+      is fully refactored).
+
+SEE ALSO
+
+    http://mifosforge.jira.com/browse/MIFOS-4511
+    http://thread.gmane.org/gmane.comp.finance.mifos.devel/10798
