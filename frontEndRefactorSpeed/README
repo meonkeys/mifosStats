@@ -27,6 +27,14 @@ TODO
     * Add discrete "completion points" to the graph (ie: when a particular area
       is fully refactored).
 
+COPYRIGHT
+
+    Copyright held by the Grameen Foundation. All rights reserved.
+
+LICENSE
+
+    GPL v3 or later.
+
 SEE ALSO
 
     http://mifosforge.jira.com/browse/MIFOS-4511
