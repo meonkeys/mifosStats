@@ -22,5 +22,6 @@ set title "Lines of code vs. date for old and new front-end"
 set ylabel "Lines of Code"
 set xlabel "Month/Year"
 set output "counts.png"
+set grid xtics
 plot "counts.dat" using 1:2 title columnhead(2) with lines, \
      "counts.dat" using 1:3 title columnhead(3) with lines
