@@ -27,8 +27,8 @@ do
     commitAtDate=`git rev-list -n 1 --before=$date origin/master`
     git checkout --quiet $commitAtDate
     git clean -fdx
-    strutsJsplines=`find $mifosHead -type f \( -iname '*.jsp' -o -iname '*action.java' \) \! -path "$mifosHead/.git/*" \! -path "*/target/*" -print0 | wc --files0-from=- --lines | grep --color=never total$ | sed -e 's/^\([0-9]\+\) .*/\1/'`
-    springMvcFtllines=`find $mifosHead -type f \( -iname '*.ftl' -o -iname '*controller.java' \) \! -path "$mifosHead/.git/*" \! -path "*/target/*" -print0 | wc --files0-from=- --lines | grep --color=never total$ | sed -e 's/^\([0-9]\+\) .*/\1/'`
+    strutsJsplines=`find $mifosHead -type f \( -iname '*.jsp' -o -iname '*action.java' \) \! -path "$mifosHead/.git/*" \! -path "*/target*" -print0 | wc --files0-from=- --lines | grep --color=never total$ | sed -e 's/^\([0-9]\+\) .*/\1/'`
+    springMvcFtllines=`find $mifosHead -type f \( -iname '*.ftl' -o -iname '*controller.java' \) \! -path "$mifosHead/.git/*" \! -path "*/target*" -print0 | wc --files0-from=- --lines | grep --color=never total$ | sed -e 's/^\([0-9]\+\) .*/\1/'`
     echo -e "$date\t$strutsJsplines\t$springMvcFtllines"
 done
 popd > /dev/null
