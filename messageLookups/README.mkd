@@ -1,0 +1,48 @@
+What's This?
+============
+
+Since Mifos version 2.1, database traffic has increased significantly. The
+cause seems to be related to a change in the code used to look up translatable
+strings. For instance:
+
+* LabelTagUtils
+* ApplicationConfigurationDaoHibernate
+* MifosPropertyMessageResources
+
+Cheap Perf
+==========
+
+To test this theory out, I watched the MySQL query log (general\_log) while
+following a simple set of manual steps. I followed this "script" against Mifos
+2.0.x (e-release), Mifos 2.1.x (f-release), and head/master (as of 2011-04-21)
+builds.
+
+The results are captured in six log files.
+
+* e-release-{start,pages}.txt
+* f-release-{start,pages}.txt
+* master-{start,pages}.txt
+
+Script
+======
+
+1.  drop/create db
+2.  turn on mysql general\_log
+3.  start mifos
+4.  turn off mysql general\_log
+5.  move /tmp/log.txt
+6.  turn on mysql general\_log
+7.  login, hit homepage
+8.  go to collection sheet, click cancel
+9.  go to admin page
+10. turn off mysql general\_log
+11. stop mifos
+12. move /tmp/log.txt
+
+Report
+======
+
+To regenerate report.txt, run `make clean && make`.
+
+Notice that master (currently) only slightly improves on f-release, and is
+still far worse than e-release.

@@ -1,0 +1,28 @@
+Stats run from Thu Apr 21 16:01:06 PDT 2011
+*** e-release ***
+lines of SQL logged
+   3750 e-release-start.txt
+    256 e-release-pages.txt
+   4006 total
+count of 'from lookup_value ' (note the space): 3
+count of 'from lookup_value_locale': 3
+number of Connect calls: 10
+
+*** f-release ***
+lines of SQL logged
+   3514 f-release-start.txt
+   2469 f-release-pages.txt
+   5983 total
+count of 'from lookup_value ' (note the space): 238
+count of 'from lookup_value_locale': 1710
+number of Connect calls: 10
+
+*** master ***
+lines of SQL logged
+   2886 master-start.txt
+   1715 master-pages.txt
+   4601 total
+count of 'from lookup_value ' (note the space): 159
+count of 'from lookup_value_locale': 1137
+number of Connect calls: 10
+
