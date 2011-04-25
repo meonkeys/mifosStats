@@ -4,5 +4,8 @@ showreport: report.txt
 report.txt: report.sh
 	./$< $@
 
+README.html: README.mkd
+	markdown $< > $@
+
 clean:
-	$(RM) report.txt
+	$(RM) report.txt README.html
