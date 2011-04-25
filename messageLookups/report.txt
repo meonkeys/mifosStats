@@ -1,4 +1,4 @@
-Stats run from Thu Apr 21 16:01:06 PDT 2011
+Stats run from Mon Apr 25 12:08:01 PDT 2011
 *** e-release ***
 lines of SQL logged
    3750 e-release-start.txt
@@ -11,10 +11,10 @@ number of Connect calls: 10
 *** f-release ***
 lines of SQL logged
    3514 f-release-start.txt
-   2469 f-release-pages.txt
-   5983 total
-count of 'from lookup_value ' (note the space): 238
-count of 'from lookup_value_locale': 1710
+    280 f-release-pages.txt
+   3794 total
+count of 'from lookup_value ' (note the space): 4
+count of 'from lookup_value_locale': 3
 number of Connect calls: 10
 
 *** master ***
